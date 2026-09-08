@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+[[mods]]
+modId="improvedsnowlayers"
+version="1.0.0"
+displayName="Improved Snow Layers"
+authors="Bramblejack"
+description="Renders phantom snow layers under non-full blocks to create an illusion of better snow coverage."
+
+[[mixins]]
+config = "improvedsnowlayers.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${mod_id}]]
+    modId="embeddium"
+    mandatory=true
+    versionRange="[0.3.31,)"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.${mod_id}]]
+modId="yacl"
+mandatory=true
+versionRange="[3.6.6+1.20.1-forge,)"
+ordering="AFTER"
+side="CLIENT"

@@ -1,0 +1,18 @@
+{
+    "required":  true,
+    "minVersion":  "0.8",
+    "package":  "com.Bramblejack.ImprovedSnowLayers.mixin",
+    "compatibilityLevel":  "JAVA_17",
+    "refmap":  "improvedsnowlayers.refmap.json",
+    "mixins":  [],
+    "client":  [
+        "embeddium.ChunkBuilderMeshingTaskSnowWrapMixin",
+        "embeddium.ChunkBuilderMeshingTaskSnowyStateMixin"
+    ],
+    "injectors":  {
+                      "defaultRequire":  0
+                  },
+    "mixinextras":  {
+                        "minVersion":  "0.5.3"
+                    }
+}

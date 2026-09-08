@@ -1,0 +1,23 @@
+{
+  "config.improvedsnowlayers.title": "Improved Snow Layers",
+  "config.improvedsnowlayers.category.general": "General",
+  "config.improvedsnowlayers.category.general.tooltip": "Control which blocks are allowed to receive phantom snow layers",
+  "config.improvedsnowlayers.option.checkerMode": "Snow Neighbor Check",
+  "config.improvedsnowlayers.option.checkerMode.description": "How a block's 4 horizontal neighbors are judged to decide if it should receive a phantom snow layer. 3 of 4: at least 3 of 4 must be snow. Prefer Snow: shows snow if snow-neighbors >= air-neighbors (ties favor snow). Prefer Air: shows snow only if snow-neighbors > air-neighbors (ties favor air). All Sides: all 4 neighbors must be snow.",
+  "config.improvedsnowlayers.checkerMode.THREE_OF_FOUR": "3 of 4",
+  "config.improvedsnowlayers.checkerMode.PREFER_SNOW": "Prefer Snow",
+  "config.improvedsnowlayers.checkerMode.PREFER_AIR": "Prefer Air",
+  "config.improvedsnowlayers.checkerMode.ALL_SIDES": "All Sides",
+  "config.improvedsnowlayers.option.useRaySearch": "Extended Neighbor Search",
+  "config.improvedsnowlayers.option.useRaySearch.description": "Instead of only looking at a block's 4 immediate neighbors, climb over solid neighbors (like a raised grass block) to find the real snow or air surface beside it before deciding. This can flip a checker mode's outcome for uneven terrain, but a snow source found more than 1 block away currently has no visible effect: phantom layers are still only ever rendered right next to a real snow block, so raising the horizontal distance above 1 mainly affects eligibility bookkeeping, not what actually renders.",
+  "config.improvedsnowlayers.option.maxHorizontalDistance": "Max Search Distance",
+  "config.improvedsnowlayers.option.maxHorizontalDistance.description": "How many blocks outward each direction is allowed to search when Extended Neighbor Search is on. Only affects eligibility - phantom layers still only render adjacent to a real snow block, so values above 1 rarely change what you actually see and cost more performance per candidate block. Has no effect when Extended Neighbor Search is off.",
+  "config.improvedsnowlayers.option.maxVerticalDistance": "Max Vertical Snap",
+  "config.improvedsnowlayers.option.maxVerticalDistance.description": "How many blocks up or down Extended Neighbor Search is allowed to climb to find the open surface in a direction (e.g. to see over/under a raised or sunken neighbor). Has no effect when Extended Neighbor Search is off.",
+  "config.improvedsnowlayers.option.reduceZFighting": "Reduce Z-Fighting",
+  "config.improvedsnowlayers.option.reduceZFighting.description": "Renders phantom snow layers with a very slightly widened model so their edges don't flicker/z-fight against the exactly-flush faces of the block they're rendered onto. Only affects phantom layers - real snow blocks are never changed.",
+  "config.improvedsnowlayers.option.whitelist": "Block Whitelist",
+  "config.improvedsnowlayers.option.whitelist.description": "If not empty, only these blocks/tags may receive phantom snow layers. Prefix an entry with # to match a block tag (e.g. #minecraft:fences), otherwise use a block id (e.g. minecraft:oak_fence).",
+  "config.improvedsnowlayers.option.blacklist": "Block Blacklist",
+  "config.improvedsnowlayers.option.blacklist.description": "Blocks/tags listed here never receive phantom snow layers, even if they match the whitelist. Prefix an entry with # to match a block tag (e.g. #minecraft:fences), otherwise use a block id (e.g. minecraft:oak_fence)."
+}
